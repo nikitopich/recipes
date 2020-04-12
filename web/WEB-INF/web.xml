@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <request-character-encoding>UTF-8</request-character-encoding>
+    <response-character-encoding>UTF-8</response-character-encoding>
+
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>app.servlets.SearchRecipeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>list</servlet-name>
+        <servlet-class>app.servlets.RecipeListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/recipes</url-pattern>
+    </servlet-mapping>
+
+</web-app>
